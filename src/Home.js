@@ -5,6 +5,7 @@ import HomeImage2 from "./Assets/Homebanner2.jpg"
 import { Carousel } from "antd";
 import { useMediaQuery } from "@mui/material";
 import Service from "./Component/Service";
+import Footer from "./Component/Footer"
 
 const Home = () => {
     return (
@@ -62,6 +63,7 @@ const Home = () => {
                 </div>
             </Carousel>
             <Service />
+            <Footer />
 
          
         </div>
