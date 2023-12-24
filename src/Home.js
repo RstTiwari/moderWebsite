@@ -1,7 +1,10 @@
 import React from "react";
 import HomeImage from "./Assets/Homebanner.jpg";
+import HomeImage1 from "./Assets/Homebanner1.jpg"
+import HomeImage2 from "./Assets/Homebanner2.jpg"
 import { Carousel } from "antd";
 import { useMediaQuery } from "@mui/material";
+import Service from "./Component/Service";
 
 const Home = () => {
     return (
@@ -14,16 +17,53 @@ const Home = () => {
                 justifyContentL: "center",
             }}
         >
-            <Carousel autoplay>
+            <Carousel autoplay dots={false} effect={"fade"}>
                 <div className="sliderImageDiv">
-                    <h1 >Welocme to the Welding House</h1>
                     <img alt="slider1" src={HomeImage} />
+                    <div className="centeredText">
+                        <div className="typeWritterEffect">
+                            <h1 className="cauroselHeader">
+                                Welocme to the{" "}
+                                <span style={{ color: "#1A8EC2" }}>
+                                    Welding House
+                                </span>
+                            </h1>
+                            <p>Leading Industral Fabricator and Welder</p>
+                        </div>
+                    </div>
                 </div>
                 <div className="sliderImageDiv">
-                    <h1>Welocme to the Welding House</h1>
-                    <img alt="slider1" src={HomeImage} />
+                    <img alt="slider1" src={HomeImage1} />
+                    <div className="centeredText">
+                        <div className="typeWritterEffect">
+                            <h1 className="cauroselHeader">
+                                Welocme to the{" "}
+                                <span style={{ color: "#1A8EC2" }}>
+                                    Welding House
+                                </span>
+                            </h1>
+                            <p>Leading Industral Fabricator and Welder</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="sliderImageDiv">
+                    <img alt="slider1" src={HomeImage2} />
+                    <div className="centeredText">
+                        <div className="typeWritterEffect">
+                            <h1 className="cauroselHeader">
+                                Welocme to the{" "}
+                                <span style={{ color: "#1A8EC2" }}>
+                                    Welding House
+                                </span>
+                            </h1>
+                            <p>Leading Industral Fabricator and Welder</p>
+                        </div>
+                    </div>
                 </div>
             </Carousel>
+            <Service />
+
+         
         </div>
     );
 };
