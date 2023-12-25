@@ -26,9 +26,6 @@ const Footer = () => {
 
                 <div className="footer-center">
                     <div>
-                        Service
-                    </div>
-                    <div>
                         <i className="fa fa-map-marker"></i>
                         <p>
                             <span>444 S. Cedros Ave</span> Solana Beach,

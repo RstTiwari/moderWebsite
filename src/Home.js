@@ -18,18 +18,18 @@ const Home = () => {
                 justifyContentL: "center",
             }}
         >
-            <Carousel autoplay dots={false} effect={"fade"}>
+            <Carousel autoplay dots={false} effect={"fade"} speed ={700}>
                 <div className="sliderImageDiv">
                     <img alt="slider1" src={HomeImage} />
                     <div className="centeredText">
                         <div className="typeWritterEffect">
                             <h1 className="cauroselHeader">
-                                Welocme to the{" "}
-                                <span style={{ color: "#1A8EC2" }}>
+                                Welcome to the{" "}
+                                <span>
                                     Welding House
                                 </span>
                             </h1>
-                            <p>Leading Industral Fabricator and Welder</p>
+                            <p>Leading Industrial Fabricator</p>
                         </div>
                     </div>
                 </div>
@@ -38,12 +38,10 @@ const Home = () => {
                     <div className="centeredText">
                         <div className="typeWritterEffect">
                             <h1 className="cauroselHeader">
-                                Welocme to the{" "}
-                                <span style={{ color: "#1A8EC2" }}>
-                                    Welding House
-                                </span>
+                                Our Mission
+                               
                             </h1>
-                            <p>Leading Industral Fabricator and Welder</p>
+                            <p>Leading Supplier of Welding and Fabrication Parts </p>
                         </div>
                     </div>
                 </div>
@@ -52,12 +50,10 @@ const Home = () => {
                     <div className="centeredText">
                         <div className="typeWritterEffect">
                             <h1 className="cauroselHeader">
-                                Welocme to the{" "}
-                                <span style={{ color: "#1A8EC2" }}>
-                                    Welding House
-                                </span>
+                                 Our Vission
+                              
                             </h1>
-                            <p>Leading Industral Fabricator and Welder</p>
+                            <p>Creating You Vision with Love</p>
                         </div>
                     </div>
                 </div>

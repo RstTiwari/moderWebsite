@@ -24,7 +24,7 @@ const Navbar = () => {
             label: "About",
         },
         {
-            key: "",
+            key: "services",
             label: "Services",
             children: [
                 {
@@ -46,7 +46,7 @@ const Navbar = () => {
             ],
         },
         {
-            key: "",
+            key: "products",
             label: "Products",
             children: [
                 {
@@ -160,10 +160,10 @@ const Navbar = () => {
                 open={drawerOpen}
                 placement="left"
                 width={"200px"}
-                style={{}}
+                style={{marginTop:"2rem"}}
             >
                 <Menu
-                    style={{ color: "#1976d2" }}
+                    style={{ color: "#1976d2", fontSize:'12px',fontWeight:"bold"}}
                     items={menuItems}
                     onSelect={handleMenuClick}
                     mode="inline"
