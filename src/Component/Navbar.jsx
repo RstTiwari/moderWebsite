@@ -99,12 +99,10 @@ const Navbar = () => {
                         sx={{
                             flexGrow: 0.7,
                             display: { xs: "block", sm: "block" },
-                            font:"font: normal 36px 'Open Sans';"
                         }}
                     >
-                        {" "}
                         <h3>
-                            Welding<span>House</span>
+                            Welding House
                         </h3>
                     </Typography>
                     <Box
@@ -116,7 +114,7 @@ const Navbar = () => {
                             },
                         }}
                     >
-                        <Row align={"center"} gutter={100}>
+                        <Row align={"center"} gutter={50}>
                             <Col span={4}>
                                 <Link to={"/"}>
                                     <Typography>Home</Typography>
