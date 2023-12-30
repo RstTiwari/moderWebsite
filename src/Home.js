@@ -2,6 +2,7 @@ import React from "react";
 import HomeImage from "./Assets/Homebanner.jpg";
 import HomeImage1 from "./Assets/Homebanner1.jpg"
 import HomeImage2 from "./Assets/Homebanner2.jpg"
+import HomeImage3 from "./Assets/home3 (1).jpg"
 import { Carousel } from "antd";
 import { useMediaQuery } from "@mui/material";
 import Service from "./Component/Service";
@@ -28,9 +29,9 @@ const Home = () => {
                 }}
             >
                 <div className="sliderImageDiv">
-                    <img alt="slider1" src={HomeImage} />
+                    <img alt="slider1" src={HomeImage3} />
                     <div className="centeredText">
-                        <div className="typeWritterEffect">
+                        <div >
                             <h1 className="cauroselHeader">
                                 Welcome to <span>WELDING HOUSE</span>
                             </h1>
@@ -55,7 +56,7 @@ const Home = () => {
                 <div className="sliderImageDiv">
                     <img alt="slider1" src={HomeImage1} />
                     <div className="centeredText">
-                        <div className="typeWritterEffect">
+                        <div >
                             <h1 className="cauroselHeader">Our Mission</h1>
                             <h6  className="cauroselText">
                                 "Our Mission: To consistently deliver
@@ -70,7 +71,7 @@ const Home = () => {
                 <div className="sliderImageDiv">
                     <img alt="slider1" src={HomeImage2} />
                     <div className="centeredText">
-                        <div className="typeWritterEffect">
+                        <div >
                             <h1 className="cauroselHeader">Our Vission</h1>
                             <h6  className="cauroselText">
                                 "Our Vision: To be the premier provider of
