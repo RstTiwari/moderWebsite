@@ -25,7 +25,7 @@ const Navbar = () => {
         },
         {
             key: "services",
-            label: "Services",
+            label: "Services/Products",
             children: [
                 {
                     key: "/lesserwelding",
@@ -50,8 +50,34 @@ const Navbar = () => {
             ],
         },
         {
-            key: "products",
-            label: "Products",
+            key: "otherservices",
+            label: "Other Services",
+            children: [
+                {
+                    key: "/lessercutting",
+                    label: "Lesser cutting ",
+                },
+                {
+                    key: "/cncwelding",
+                    label: "Cnc welding",
+                },
+                {
+                    key: "/bufing",
+                    label:"Bufing",
+                },
+                {
+                    key: "/spotwelding",
+                    label: "Spot Welding",
+                },
+                {
+                    key: "/projectorwelding",
+                    label: "Projector welding ",
+                },
+            ],
+        },
+        {
+            key: "industries",
+            label: "Industries",
             children: [
                 {
                     key: "/agricultureandfood",
@@ -119,9 +145,10 @@ const Navbar = () => {
             <AppBar
                 component={"nav"}
                 sx={{
-                    backgroundColor: "#000000",
-                    height: "75px",
+                    backgroundColor: "#464646",
+                    height: "70px",
                     color: "#99ba02",
+                    justifyContent: "center",
                 }}
             >
                 <Toolbar>
@@ -152,12 +179,11 @@ const Navbar = () => {
                             display: {
                                 xs: "none",
                                 sm: "block",
-                                paddingRight: "20px",
                                 color: "#99ba02",
                             },
                         }}
                     >
-                        <Row align={"center"} gutter={80}>
+                        <Row align={"center"} gutter={60}>
                             <Col span={3}>
                                 <Link to={"/"}>
                                     <Typography color={"#99ba02"}>
@@ -172,14 +198,14 @@ const Navbar = () => {
                                     </Typography>
                                 </Link>
                             </Col>
-                            <Col span={3}>
+                            <Col span={4}>
                                 <Typography className="dropdown">
                                     <Typography
                                         style={{
                                             color: "#99ba02",
                                         }}
                                     >
-                                        Service
+                                        Service/Product
                                     </Typography>
                                     <div className="dropdown-content">
                                         <Link href="#">
@@ -189,17 +215,17 @@ const Navbar = () => {
                                         </Link>
                                         <Link href="#">
                                             <Typography color={"#99ba02"}>
-                                                Tig Welding
+                                                Tig Welding GTAW
                                             </Typography>
                                         </Link>
                                         <Link href="#">
                                             <Typography color={"#99ba02"}>
-                                                Mig Welding
+                                                Mig Welding GMAW
                                             </Typography>
                                         </Link>
                                         <Link href="#">
                                             <Typography color={"#99ba02"}>
-                                                Arc Welding
+                                                Arc Welding SMAW
                                             </Typography>
                                         </Link>
                                         <Link href="#">
@@ -210,93 +236,50 @@ const Navbar = () => {
                                     </div>
                                 </Typography>
                             </Col>
-                            <Col span={4}>
-                                <Typography className="dropdown">
-                                    <Typography color={"#99ba02"}>
-                                        Indrustries
-                                    </Typography>
-                                    <div className="dropdown-content">
-                                        <Link href="#">
-                                            <Typography color={"#99ba02"}>
-                                                Agriculture and food
-                                            </Typography>
-                                        </Link>
-                                        <Link href="#">
-                                            <Typography color={"#99ba02"}>
-                                                Cement
-                                            </Typography>
-                                        </Link>
-                                        <Link href="#">
-                                            <Typography color={"#99ba02"}>
-                                                Hydropower
-                                            </Typography>
-                                        </Link>
-                                        <Link href="#">
-                                            <Typography color={"#99ba02"}>
-                                                {" "}
-                                                Mining quarries an earthmaring
-                                            </Typography>
-                                        </Link>
-                                        <Link href="#">
-                                            <Typography color={"#99ba02"}>
-                                                {" "}
-                                                Oil and gas / petrochemical
-                                            </Typography>
-                                        </Link>
-                                        <Link href="#">
-                                            <Typography color={"#99ba02"}>
-                                                {" "}
-                                                Power
-                                            </Typography>
-                                        </Link>
-                                        <Link href="#">
-                                            <Typography color={"#99ba02"}>
-                                                {" "}
-                                                Pulp and paper
-                                            </Typography>
-                                        </Link>
-                                        <Link href="#">
-                                            <Typography color={"#99ba02"}>
-                                                {" "}
-                                                Railways
-                                            </Typography>
-                                        </Link>
-                                        <Link href="#">
-                                            <Typography color={"#99ba02"}>
-                                                {" "}
-                                                Recycling and waste
-                                            </Typography>
-                                        </Link>
-                                        <Link href="#">
-                                            <Typography color={"#99ba02"}>
-                                                Steel making
-                                            </Typography>
-                                        </Link>
-                                        <Link href="#">
-                                            <Typography color={"#99ba02"}>
-                                                {" "}
-                                                Sugar
-                                            </Typography>
-                                        </Link>
-                                        <Link href="#">
-                                            <Typography color={"#99ba02"}>
-                                                {" "}
-                                                Film Ind
-                                            </Typography>
-                                        </Link>
-                                        <Link href="#">
-                                            <Typography color={"#99ba02"}>
-                                                {" "}
-                                                Pharma Ind
-                                            </Typography>
-                                        </Link>
-                                    </div>
-                                </Typography>
-                            </Col>
                             <Col span={5}>
                                 <Typography className="dropdown">
                                     <Typography color={"#99ba02"}>
                                         Other Service
+                                    </Typography>
+                                    <div className="dropdown-content">
+
+                                        <Link href="#">
+                                            <Typography color={"#99ba02"}>
+                                            Lesser cutting 
+                                            </Typography>
+                                        </Link>
+                                        <Link href="#">
+                                            <Typography color={"#99ba02"}>
+                                            Cnc welding
+                                            </Typography>
+                                        </Link>
+                                        <Link href="#">
+                                            <Typography color={"#99ba02"}>
+                                                {" "}
+                                                Bufing
+                                            </Typography>
+                                        </Link>
+                        
+                                        <Link href="#">
+                                            <Typography color={"#99ba02"}>
+                                                {" "}
+                                                Spot Welding
+                                            </Typography>
+                                        </Link>
+                                        <Link href="#">
+                                            <Typography color={"#99ba02"}>
+                                                {" "}
+                                                Projector welding
+                                            </Typography>
+                                        </Link>
+
+                                    </div>
+                                </Typography>
+                            </Col>
+                            <Col span={4}>
+                                <Typography className="dropdown">
+                                    <Typography color={"#99ba02"}>
+                                        Indrustries
                                     </Typography>
                                     <div className="dropdown-content">
                                         <Link href="#">
@@ -393,7 +376,7 @@ const Navbar = () => {
                 width={"350px"}
                 height={"350px"}
                 style={{
-                    backgroundColor: "#000000",
+                    backgroundColor: "#464646",
                 }}
             >
                 <Menu
@@ -401,7 +384,7 @@ const Navbar = () => {
                         color: "#99ba02",
                         fontSize: "1.5rem",
                         fontWeight: "bold",
-                        backgroundColor: "#000000",
+                        backgroundColor: "#464646",
                     }}
                     items={menuItems}
                     onSelect={handleMenuClick}

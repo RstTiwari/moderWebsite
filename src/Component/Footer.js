@@ -16,16 +16,9 @@ const Footer = () => {
                         </a>
 
                         <a href="#">About</a>
-                        <a href="#">Contact</a>
+                        <a href="#">Contact Us</a>
                     </p>
-                    <p className="footer-links">
-                        <a href="#" className="link-1">
-                            Home
-                        </a>
-
-                        <a href="#">About</a>
-                        <a href="#">Contact</a>
-                    </p>
+            
 
                     <p className="footer-company-name">Welding House ©2023</p>
                 </div>

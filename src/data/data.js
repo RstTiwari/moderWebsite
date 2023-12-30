@@ -1,6 +1,15 @@
 import HomeImage2 from "../Assets/Homebanner2.jpg";
+import HomeImage from "../Assets/Homebanner.jpg";
+import HomeImage1 from "../Assets/Homebanner1.jpg"
+import HomeImage3 from "../Assets/home3 (1).jpg"
 
 const  data = {
+    homeData:{
+        title:" Welcome to WELDING HOUSE",
+        subtitle:"  Shaping the Future of Welding & Cutting Products Consumables and Fabrication Technology",
+        text:" Welding House is a INDIA leader in welding and cutting equipment and consumables. Our innovative, INDIA -renowned equipment and fabrication technology solutions are developed with input from our customers and built onthe expertise and heritage of a global manufacturingleader. Our collective vision is to transform theindustry and meet the needs of our customers through our diverse product portfolio.",
+        image:HomeImage3
+    },
     serviceData:[
         {
             image: HomeImage2,
