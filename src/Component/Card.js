@@ -15,15 +15,15 @@ export default function MediaCard({image, title,details,actionName,actionLink}) 
     };
   return (
       <Card sx={{ maxWidth: 350 }}>
-          <CardHeader sx={{ color: "#1A8EC2" }} title={title} />
+          <CardHeader sx={{ color: "#99ba02" }} title={title} />
           <CardMedia sx={{ height: 140 }} image={image} title="green iguana" />
           <CardContent>
-              <Typography variant="body2" color="text.secondary">
+              <Typography variant="body2" color="#99ba02">
                   {details}
               </Typography>
           </CardContent>
               <IconButton>
-                  <Button size ={"large"} type = {"primary"} onClick={handleButtonClick}>
+                  <Button size ={"large"}  style={{backgroundColor:"#99ba02"}} onClick={handleButtonClick}>
                       {actionName}
                   </Button>
               </IconButton>
