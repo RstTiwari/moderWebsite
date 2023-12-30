@@ -137,7 +137,7 @@ const Navbar = () => {
   
     const handleMenuClick = (content)=>{
         setDrawerOpen(!drawerOpen)
-        navigate(content.key)
+        navigate("/")
     }
     return (
         <Box sx={{ display: "flex", color: "#99ba02", zIndex: 1000 }}>
