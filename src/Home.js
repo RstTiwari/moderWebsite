@@ -18,18 +18,37 @@ const Home = () => {
                 justifyContentL: "center",
             }}
         >
-            <Carousel autoplay dots={false} effect={"fade"} speed ={700}>
+            <Carousel
+                autoplay
+                dots={false}
+                effect={"scrollx "}
+                autoplaySpeed={5000}
+                style={{
+                    color: "#99ba02"
+                }}
+            >
                 <div className="sliderImageDiv">
                     <img alt="slider1" src={HomeImage} />
                     <div className="centeredText">
                         <div className="typeWritterEffect">
                             <h1 className="cauroselHeader">
-                                Welcome to the{" "}
-                                <span>
-                                    Welding House
-                                </span>
+                                Welcome to <span>WELDING HOUSE</span>
                             </h1>
-                            <p>Leading Industrial Fabricator</p>
+                            <h6  className="cauroselText">
+                                Shaping the Future of Welding & Cutting
+                                Products, Consumables and Fabrication Technology
+                            </h6>
+                            <h6 className="cauroselText">
+                                Welding House is a INDIA leader in welding and
+                                cutting equipment and consumables. Our
+                                innovative, INDIA -renowned equipment and
+                                fabrication technology solutions are developed
+                                with input from our customers and built on the
+                                expertise and heritage of a global manufacturing
+                                leader. Our collective vision is to transform
+                                the industry and meet the needs of our customers
+                                through our diverse product portfolio.
+                            </h6>
                         </div>
                     </div>
                 </div>
@@ -37,11 +56,14 @@ const Home = () => {
                     <img alt="slider1" src={HomeImage1} />
                     <div className="centeredText">
                         <div className="typeWritterEffect">
-                            <h1 className="cauroselHeader">
-                                Our Mission
-                               
-                            </h1>
-                            <p>Leading Supplier of Welding and Fabrication Parts </p>
+                            <h1 className="cauroselHeader">Our Mission</h1>
+                            <h6  className="cauroselText">
+                                "Our Mission: To consistently deliver
+                                exceptional welding services, exceeding industry
+                                standards, while fostering a culture of
+                                innovation, safety, and environmental
+                                responsibility"
+                            </h6>
                         </div>
                     </div>
                 </div>
@@ -49,19 +71,22 @@ const Home = () => {
                     <img alt="slider1" src={HomeImage2} />
                     <div className="centeredText">
                         <div className="typeWritterEffect">
-                            <h1 className="cauroselHeader">
-                                 Our Vission
-                              
-                            </h1>
-                            <p>Creating You Vision with Love</p>
+                            <h1 className="cauroselHeader">Our Vission</h1>
+                            <h6  className="cauroselText">
+                                "Our Vision: To be the premier provider of
+                                welding solutions, setting the gold standard for
+                                excellence in craftsmanship and innovation. We
+                                envision a future where our company is
+                                synonymous with cutting-edge welding
+                                technologies, superior quality, and unwavering
+                                dedication to client satisfaction."
+                            </h6>
                         </div>
                     </div>
                 </div>
             </Carousel>
             <Service />
             <Footer />
-
-         
         </div>
     );
 };

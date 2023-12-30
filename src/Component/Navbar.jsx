@@ -78,9 +78,16 @@ const Navbar = () => {
         navigate(content.key)
     }
     return (
-        <Box sx={{ display: "flex" }}>
+        <Box sx={{ display: "flex", color: "#99ba02", zIndex:"10000" }}>
             <CssBaseline />
-            <AppBar component={"nav"}>
+            <AppBar
+                component={"nav"}
+                sx={{
+                    backgroundColor: "#000000",
+                    height: "75px",
+                    color: "#99ba02",
+                }}
+            >
                 <Toolbar>
                     <IconButton
                         color="inherit"
@@ -96,14 +103,14 @@ const Navbar = () => {
                         variant="h6"
                         component="div"
                         className="footer-left"
+                        color={"#99ba02"}
                         sx={{
                             flexGrow: 0.7,
                             display: { xs: "block", sm: "block" },
                         }}
                     >
-                        <h3>
-                            Welding House
-                        </h3>
+                        <h3>Welding House</h3>
+                        
                     </Typography>
                     <Box
                         sx={{
@@ -111,43 +118,76 @@ const Navbar = () => {
                                 xs: "none",
                                 sm: "block",
                                 paddingRight: "20px",
+                                color: "#99ba02",
                             },
                         }}
                     >
                         <Row align={"center"} gutter={50}>
                             <Col span={4}>
                                 <Link to={"/"}>
-                                    <Typography>Home</Typography>
+                                    <Typography color={"#99ba02"}>
+                                        Home
+                                    </Typography>
                                 </Link>
                             </Col>
                             <Col span={4}>
                                 <Link to={"/about"}>
-                                    <Typography>About</Typography>
+                                    <Typography color={"#99ba02"}>
+                                        About
+                                    </Typography>
                                 </Link>
                             </Col>
                             <Col span={4}>
                                 <Typography className="dropdown">
-                                    <Typography>Service</Typography>
+                                    <Typography
+                                        style={{
+                                            color: "#99ba02",
+                                        }}
+                                    >
+                                        Service
+                                    </Typography>
                                     <div className="dropdown-content">
-                                        <Link href="#">Welding</Link>
-                                        <Link href="#">Welding</Link>
-                                        <Link href="#">Welding</Link>
+                                        <Link href="#">
+                                            <Typography color={"#99ba02"}>
+                                                Welding
+                                            </Typography>
+                                        </Link>
+                                        <Link href="#">
+                                            <Typography color={"#99ba02"}>
+                                                Welding
+                                            </Typography>
+                                        </Link>
+                                        <Link href="#">
+                                            <Typography color={"#99ba02"}>
+                                                Welding
+                                            </Typography>
+                                        </Link>
                                     </div>
                                 </Typography>
                             </Col>
                             <Col span={4}>
                                 <Typography className="dropdown">
-                                    <Typography>Products </Typography>
+                                    <Typography color={"#99ba02"}>
+                                        Products{" "}
+                                    </Typography>
                                     <div className="dropdown-content">
-                                        <Link href="#">Product1</Link>
-                                        <Link href="#">Product1</Link>
-                                        <Link href="#">Product1</Link>
+                                        <Link href="#">
+                                            <Typography color={"#99ba02"}>
+                                                Product1
+                                            </Typography>
+                                        </Link>
+                                        <Link href="#">
+                                            <Typography color={"#99ba02"}>Product1</Typography>
+                                        </Link>
+                                        <Link href="#" >
+                                            <Typography color={"#99ba02"}>Product</Typography>
+                                        </Link>
                                     </div>
                                 </Typography>
                             </Col>
                             <Col span={6}>
                                 <Link to={"/contact"}>
-                                    <Typography>Contact Us</Typography>
+                                    <Typography color={"#99ba02"}>Contact Us</Typography>
                                 </Link>
                             </Col>
                         </Row>
@@ -156,12 +196,17 @@ const Navbar = () => {
             </AppBar>
             <Drawer
                 open={drawerOpen}
-                placement="left"
-                width={"200px"}
-                style={{marginTop:"2rem"}}
+                placement ={"top"}
+                width={"350px"}
+                height={"350px"}
+                
             >
                 <Menu
-                    style={{ color: "#1976d2", fontSize:'12px',fontWeight:"bold"}}
+                    style={{
+                        color: "#99ba02",
+                        fontSize: "1.5rem",
+                        fontWeight: "bold",
+                    }}
                     items={menuItems}
                     onSelect={handleMenuClick}
                     mode="inline"

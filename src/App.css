@@ -37,13 +37,13 @@ img {
   font-size: clamp(2rem, 2.8vw, 5rem);
   font-weight: bold;
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .typeWritterEffect {
-  animation: fadeInOut 5s infinite alternate;
+  animation: fadeInOut 7s infinite alternate;
 }
 .headerTerxt {
   font-size: "2rem";
@@ -67,6 +67,7 @@ img {
 .dropdown {
   position: relative;
   display: inline-block;
+  z-index: 1;
 }
 .dropdown-content {
   font-size: 1rem;
@@ -74,12 +75,13 @@ img {
   display: none;
   position: absolute;
   background-color: white;
-  min-width: 125px;
+  text-align: left;
+  min-width: 7rem;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: -1;
 }
 .dropdown-content a {
-  color: black;
+  color: "#99ba02";
   padding: 12px 16px;
   text-decoration: none;
   align-items: center;
@@ -121,7 +123,11 @@ img {
 
 .cauroselHeader {
   font-size: 2.5rem;
-  color: white;
+  color:  "#99ba02";
+}
+.cauroselText {
+  font-size: 1rem;
+  color: "#99ba02";
 }
 
 @media (max-width: 768px) {
@@ -146,7 +152,7 @@ img {
     font-size: clamp(3rem, 2.8vw, 5rem);
     font-weight: bold;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -158,5 +164,13 @@ img {
   img {
     width: 100%;
     height: 100%;
+  }
+  .cauroselHeader {
+    font-size: 1.5rem;
+    color:  "#99ba02";
+  }
+  .cauroselText {
+    font-size: 0.8rem;
+    color: "#99ba02";
   }
 }
