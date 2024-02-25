@@ -5,7 +5,7 @@ import data from "../data/data"
 const Service = () => {
     return (
         <>
-            <h1 className="headerTerxt">Our Service</h1>
+            <h1 className="headerTerxt" style={{backgroundColor:"#006635"}}>Our Service</h1>
             <div className="service_component">
                 {data.serviceData.map((item) => {
                     return (

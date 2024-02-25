@@ -2,6 +2,8 @@ import React from "react";
 import "./Footer.css"
 import { Facebook,Instagram,Twitter,LinkedIn } from "@mui/icons-material";
 import { Typography } from "@mui/material";
+import { Link } from "react-router-dom";
+import { Col ,List} from "antd";
 
 const Footer = () => {
     return (
@@ -18,12 +20,8 @@ const Footer = () => {
                         <a href="#">About</a>
                         <a href="#">Contact Us</a>
                     </p>
-            
 
                     <p className="footer-company-name">Welding House ©2023</p>
-                </div>
-
-                <div className="footer-center">
                     <div>
                         <i className="fa fa-map-marker"></i>
                         <p>
@@ -62,9 +60,77 @@ const Footer = () => {
                     </div>
                 </div>
 
+             
+
+                <div className="footer-center1">
+                    <h3 color={"#fff"} >Indrustries</h3>
+                      <List>
+                        <List.Item>
+                            <Typography color={"#fff"}>
+                                Agriculture and food
+                            </Typography>
+                        </List.Item>
+                        <List.Item>
+                            <Typography color={"#fff"}>Cement</Typography>
+                        </List.Item>
+                        <List.Item>
+                            <Typography color={"#fff"}>Hydropower</Typography>
+                        </List.Item>
+                        <List.Item>
+                            <Typography color={"#fff"}>
+                                {" "}
+                                Mining quarries an earthmaring
+                            </Typography>
+                        </List.Item>
+                         <List.Item>
+                         <Typography color={"#fff"}>
+                            {" "}
+                            Oil and gas / petrochemical
+                        </Typography>
+                         </List.Item>
+                         <List.Item>
+                         <Typography color={"#fff"}> Power</Typography>
+
+                         </List.Item>
+                         <List.Item>
+                         <Typography color={"#fff"}> Pulp and paper</Typography>
+
+                         </List.Item>                
+                          <List.Item>
+                          <Typography color={"#fff"}> Railways</Typography>
+                          </List.Item>                          
+                          <List.Item>
+                          <Typography color={"#fff"}>
+                            {" "}
+                            Recycling and waste
+                        </Typography>
+                          </List.Item>
+                        
+                        <List.Item>
+                        <Typography color={"#fff"}>Steel making</Typography>
+
+                        </List.Item>
+                        <List.Item>
+                        <Typography color={"#fff"}>Steel making</Typography>
+
+                        </List.Item>
+                        <List.Item>
+                        <Typography color={"#fff"}> Sugar</Typography>
+
+                        </List.Item>
+                        <List.Item>
+                        <Typography color={"#fff"}> Film Industry</Typography>
+
+                        </List.Item>
+                        <List.Item>
+                        <Typography color={"#fff"}> Pharma Industry</Typography>
+                        </List.Item>
+                    </List>
+                </div>
                 <div className="footer-right">
                     <p className="footer-company-about">
-                        <span style={{color:"#99ba02"}}>About the company</span>
+                        <h3>About the company</h3>
+                        <span style={{ color: "#fff" }}></span>
                         Welding House is a INDIA leader in welding and cutting
                         equipment and consumables. Our innovative, INDIA
                         -renowned equipment and fabrication technology solutions
