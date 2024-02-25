@@ -172,7 +172,7 @@ const Navbar = () => {
                     </IconButton>
                     <Row
                         align={"middle"}
-                        style={{ width: "30%", marginLeft: "2rem" }}
+                        style={{ width: "30%",}}
                     >
                         <Col>
                             <img

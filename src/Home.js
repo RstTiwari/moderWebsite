@@ -6,6 +6,8 @@ import Service from "./Component/Service";
 import Footer from "./Component/Footer"
 import data from "./data/data"
 import HeadComponent from "./Component/HeadComponent";
+import { Google } from "@mui/icons-material";
+import GoogleMap from "./Component/GoogleMap";
 
 const Home = () => {
     return (
@@ -18,6 +20,7 @@ const Home = () => {
             />
             <Service />
             <Footer />
+            <GoogleMap/>
         </div>
     );
 };
