@@ -1,9 +1,18 @@
 import React from "react";
-import "./Footer.css"
-import { Facebook,Instagram,Twitter,LinkedIn } from "@mui/icons-material";
+import "./Footer.css";
+import {
+    Facebook,
+    Instagram,
+    Twitter,
+    LinkedIn,
+    Youtube,
+    YouTube,
+} from "@mui/icons-material";
 import { Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import { Col ,List} from "antd";
+import { Col, List } from "antd";
+import tataNexArc from "../Assets/tata-nexarc-seeklogo.svg";
+import indiaMartIcon from "../Assets/337749.svg";
 
 const Footer = () => {
     return (
@@ -60,11 +69,9 @@ const Footer = () => {
                     </div>
                 </div>
 
-             
-
                 <div className="footer-center1">
-                    <h3 color={"#fff"} >Indrustries</h3>
-                      <List>
+                    <h3 color={"#fff"}>Indrustries</h3>
+                    <List>
                         <List.Item>
                             <Typography color={"#fff"}>
                                 Agriculture and food
@@ -82,48 +89,49 @@ const Footer = () => {
                                 Mining quarries an earthmaring
                             </Typography>
                         </List.Item>
-                         <List.Item>
-                         <Typography color={"#fff"}>
-                            {" "}
-                            Oil and gas / petrochemical
-                        </Typography>
-                         </List.Item>
-                         <List.Item>
-                         <Typography color={"#fff"}> Power</Typography>
-
-                         </List.Item>
-                         <List.Item>
-                         <Typography color={"#fff"}> Pulp and paper</Typography>
-
-                         </List.Item>                
-                          <List.Item>
-                          <Typography color={"#fff"}> Railways</Typography>
-                          </List.Item>                          
-                          <List.Item>
-                          <Typography color={"#fff"}>
-                            {" "}
-                            Recycling and waste
-                        </Typography>
-                          </List.Item>
-                        
                         <List.Item>
-                        <Typography color={"#fff"}>Steel making</Typography>
-
+                            <Typography color={"#fff"}>
+                                {" "}
+                                Oil and gas / petrochemical
+                            </Typography>
                         </List.Item>
                         <List.Item>
-                        <Typography color={"#fff"}>Steel making</Typography>
-
+                            <Typography color={"#fff"}> Power</Typography>
                         </List.Item>
                         <List.Item>
-                        <Typography color={"#fff"}> Sugar</Typography>
-
+                            <Typography color={"#fff"}>
+                                {" "}
+                                Pulp and paper
+                            </Typography>
                         </List.Item>
                         <List.Item>
-                        <Typography color={"#fff"}> Film Industry</Typography>
-
+                            <Typography color={"#fff"}> Railways</Typography>
                         </List.Item>
                         <List.Item>
-                        <Typography color={"#fff"}> Pharma Industry</Typography>
+                            <Typography color={"#fff"}>
+                                {" "}
+                                Recycling and waste
+                            </Typography>
+                        </List.Item>
+
+                        <List.Item>
+                            <Typography color={"#fff"}>Steel making</Typography>
+                        </List.Item>
+
+                        <List.Item>
+                            <Typography color={"#fff"}> Sugar</Typography>
+                        </List.Item>
+                        <List.Item>
+                            <Typography color={"#fff"}>
+                                {" "}
+                                Film Industry
+                            </Typography>
+                        </List.Item>
+                        <List.Item>
+                            <Typography color={"#fff"}>
+                                {" "}
+                                Pharma Industry
+                            </Typography>
                         </List.Item>
                     </List>
                 </div>
@@ -141,18 +149,77 @@ const Footer = () => {
                         diverse product portfolio
                     </p>
 
-                    <div className="footer-icons">
-                        <a href="#">
-                            <Facebook />
+                    <div
+                        className="footer-icons"
+                        style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            gap: "20px",
+                            flexWrap: "wrap",
+                        }}
+                    >
+                        <a
+                            href="https://www.indiamart.com/welding-house-mumbai/"
+                            style={{
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
+                            }}
+                        >
+                            <img
+                                src={indiaMartIcon}
+                                alt="IndiaMart"
+                                style={{
+                                    height: "40px",
+                                    width: "auto",
+                                    backgroundColor: "transparent", // Ensure no background color
+                                    opacity: 1, // Adjust opacity if needed
+                                }}
+                            />
                         </a>
-                        <a href="#">
-                            <Instagram />
+                        <a
+                            href="https://www.linkedin.com/company/welding-house-22/"
+                            style={{
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
+                            }}
+                        >
+                            <LinkedIn
+                                style={{ fontSize: "40px", color: "blue" }}
+                            />
                         </a>
-                        <a href="#">
-                            <Twitter />
+                        <a
+                            href="https://youtube.com/@weldinghouse9474?si=dgP63Xhya9gimLXW"
+                            style={{
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
+                            }}
+                        >
+                            <YouTube
+                                style={{ fontSize: "40px", color: "red" }}
+                            />
                         </a>
-                        <a href="#">
-                            <LinkedIn />
+                        <a
+                            href="https://www.tatanexarc.com/"
+                            style={{
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
+                            }}
+                        >
+                            <img
+                                src={tataNexArc}
+                                alt="Tata NexArc"
+                                style={{
+                                    height: "40px",
+                                    width: "auto",
+                                    backgroundColor: "transparent", // Ensure no background color
+                                    opacity: 1, // Adjust opacity if needed
+                                }}
+                            />
                         </a>
                     </div>
                 </div>

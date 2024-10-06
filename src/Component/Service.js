@@ -25,15 +25,7 @@ const Service = () => {
                         actionLink={serviceData[0].actionLink}
                     />
                 </div>
-                <div className="singleCard">
-                    <Card
-                        title={serviceData[0].title}
-                        image={serviceData[0].image}
-                        details={serviceData[0].details}
-                        actionName={serviceData[0].actionName}
-                        actionLink={serviceData[0].actionLink}
-                    />
-                </div>
+
                 <div className="singleCard">
                     <Card
                         title={serviceData[1].title}

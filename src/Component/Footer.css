@@ -171,6 +171,8 @@ section {
 
 .footer-distributed .footer-icons{
 	margin-top: 25px;
+	align-items: center;
+
 }
 
 .footer-distributed .footer-icons a{
@@ -179,6 +181,7 @@ section {
 	height: 35px;
 	cursor: pointer;
 	border-radius: 2px;
+	align-items: center;
 
 	font-size: 20px;
 	color: #fff;

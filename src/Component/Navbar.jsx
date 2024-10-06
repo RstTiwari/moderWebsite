@@ -6,10 +6,10 @@ import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
 import { Link } from "react-router-dom";
 import { Col, Drawer, Row, Menu, Dropdown, Space } from "antd";
-import logo from "../../src/Assets/logo.jpg"
+import logo from "../../src/Assets/logo.jpg";
 const Navbar = () => {
     const [drawerOpen, setDrawerOpen] = useState(false);
-    const navigate = useNavigate()
+    const navigate = useNavigate();
 
     const handelDrawerOpen = () => {
         setDrawerOpen(!drawerOpen);
@@ -30,7 +30,7 @@ const Navbar = () => {
             children: [
                 {
                     key: "/lesserwelding",
-                    label: "Lesser Welding",
+                    label: "Leser Welding",
                 },
                 {
                     key: "/tigwelding",
@@ -46,7 +46,7 @@ const Navbar = () => {
                 },
                 {
                     key: "/bernzingwelding",
-                    label: "Brenzing Welding",
+                    label: "Brazing ",
                 },
             ],
         },
@@ -135,11 +135,11 @@ const Navbar = () => {
             label: "Contact Us",
         },
     ];
-  
-    const handleMenuClick = (content)=>{
-        setDrawerOpen(!drawerOpen)
-        navigate("/")
-    }
+
+    const handleMenuClick = (content) => {
+        setDrawerOpen(!drawerOpen);
+        navigate("/");
+    };
     return (
         <Box
             sx={{
@@ -170,10 +170,7 @@ const Navbar = () => {
                     >
                         <MenuIcon />
                     </IconButton>
-                    <Row
-                        align={"middle"}
-                        style={{ width: "30%",}}
-                    >
+                    <Row align={"middle"} style={{ width: "30%" }}>
                         <Col>
                             <img
                                 src={logo}
@@ -181,8 +178,11 @@ const Navbar = () => {
                             />
                         </Col>
                         <Col span={8}>
-                            <Row style={{ fontSize: "1rem" }}>Welding </Row>
-                            <Row>House</Row>
+                            <Row
+                                style={{ fontSize: "1rem", marginLeft: "5px" }}
+                            >
+                                WELDING HOUSE
+                            </Row>
                         </Col>
                     </Row>
                     {/* <Typography
@@ -226,12 +226,12 @@ const Navbar = () => {
                                             color: "#fff",
                                         }}
                                     >
-                                       PRODUCT & SERVICE
+                                        PRODUCT & SERVICE
                                     </Typography>
                                     <div className="dropdown-content">
                                         <Link href="#">
                                             <Typography color={"#fff"}>
-                                                Lesser Welding
+                                                Leser Welding
                                             </Typography>
                                         </Link>
                                         <Link href="#">
@@ -251,7 +251,7 @@ const Navbar = () => {
                                         </Link>
                                         <Link href="#">
                                             <Typography color={"#fff"}>
-                                                Brenzing Welding
+                                                Brazing
                                             </Typography>
                                         </Link>
                                     </div>
@@ -295,8 +295,11 @@ const Navbar = () => {
                                     </div>
                                 </Typography>
                             </Col> */}
-                           
-                            <Col span={5} style={{ zIndex: 100 }}>
+
+                            <Col
+                                span={3}
+                                style={{ zIndex: 100, marginLeft: "-15px" }}
+                            >
                                 <Link to={"/contact"}>
                                     <Typography color={"#fff"}>
                                         CONTACT
