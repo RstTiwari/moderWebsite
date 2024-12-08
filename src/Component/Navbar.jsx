@@ -30,7 +30,7 @@ const Navbar = () => {
             children: [
                 {
                     key: "/lesserwelding",
-                    label: "Leser Welding",
+                    label: "Laser Welding",
                 },
                 {
                     key: "/tigwelding",
@@ -231,7 +231,7 @@ const Navbar = () => {
                                     <div className="dropdown-content">
                                         <Link href="#">
                                             <Typography color={"#fff"}>
-                                                Leser Welding
+                                                Laser Welding
                                             </Typography>
                                         </Link>
                                         <Link href="#">

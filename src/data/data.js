@@ -13,7 +13,7 @@ const data = {
     serviceData: [
         {
             image: HomeImage2,
-            title: "Leser Welding",
+            title: "Laser Welding",
             details: "",
             actionName: "Read More",
             actionLink: "/contact",
